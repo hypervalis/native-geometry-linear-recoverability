@@ -1,0 +1,19 @@
+{
+  "analysis": "singular_spectrum_of_dense_ridge_maps",
+  "seed": 0,
+  "test_size": 0.2,
+  "ridge_alpha": 1.0,
+  "fit_intercept": true,
+  "normalization": "StandardScaler on X and Y (train-only)",
+  "map_analyzed": "sklearn Ridge.coef_ W in scaled space (y_sc \u2248 x_sc @ W.T + b)",
+  "eps_primary": 1e-08,
+  "eps_robustness": [
+    1e-06,
+    1e-08,
+    1e-10
+  ],
+  "primary_spectral_flatness": "H_norm",
+  "direction": "Legacy\u2192HSC (col2\u2192col1)",
+  "gallery": "test-only",
+  "timestamp": "2026-08-21T11:54:16"
+}

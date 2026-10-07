@@ -1,0 +1,19 @@
+{
+  "seed": 0,
+  "test_size": 0.2,
+  "n": 16384,
+  "n_train": 13107,
+  "n_test": 3277,
+  "k": 10,
+  "ridge_alpha": 1.0,
+  "scaler": "StandardScaler on X and Y train",
+  "direction": "Legacy\u2192HSC (col2\u2192col1)",
+  "gallery": "test-only",
+  "sigma_active_frac": 1e-08,
+  "primary_statistic": "T = mean_F (\u03b2_Dense+Ridge_F - \u03b2_Dense_F)",
+  "b_perm": 200,
+  "b_boot": 5000,
+  "synchronized_permutation": true,
+  "pairs_yaml": "/home/angus/platonic-universe/tmp_ridge_geom/official_legacy_pairs.yaml",
+  "timestamp": "2026-08-21T01:17:03"
+}

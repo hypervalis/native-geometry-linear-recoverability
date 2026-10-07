@@ -1,0 +1,17 @@
+{
+  "n_models": 16,
+  "n_pairs": 101,
+  "invalid_pca": [],
+  "seed": 0,
+  "test_size": 0.2,
+  "n": 16384,
+  "n_train": 13107,
+  "n_test": 3277,
+  "ridge_alpha": 1.0,
+  "pca_rank": 256,
+  "k": 10,
+  "chance_mknn": 0.0030525030525030525,
+  "elapsed_sec": 50.50040650367737,
+  "device": "cuda",
+  "pairs_yaml": "/home/angus/platonic-universe/experiments/universetbd_shared_basis_mknn/official_legacy_pairs.yaml"
+}

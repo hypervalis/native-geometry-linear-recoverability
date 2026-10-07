@@ -1,0 +1,6 @@
+x,y,n,rho,p_conventional,p_family_perm,note
+log10_P,f90_anis,16,0.12812974131347407,0.636283602552246,0.9107,descriptive pooled; rungs not IID across families
+log10_P,f_eff_anis,16,0.05891022589125244,0.828436473886074,0.9675,descriptive pooled; rungs not IID across families
+A_log,f90_anis,16,0.3911764705882353,0.1340712995781789,,descriptive; magnitude vs concentration
+A_log,f_eff_anis,16,0.43529411764705883,0.0919523667089344,,descriptive; magnitude vs concentration
+f90_anis,fraction_directions_for_90pct_lift,16,-0.10119764747968052,0.7092130268048649,,anisotropy concentration vs functional lift concentration (distinct)

@@ -1,0 +1,4 @@
+x,y,spearman,n,k_edge
+A_log,sigma_local,0.1323529411764706,16,10
+D_sim,sigma_local,0.16470588235294117,16,10
+H_norm,sigma_local,-0.4323529411764706,16,10

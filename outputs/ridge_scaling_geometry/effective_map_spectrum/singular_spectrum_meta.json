@@ -1,0 +1,20 @@
+{
+  "analysis": "singular_spectrum_of_dense_ridge_maps",
+  "seed": 0,
+  "test_size": 0.2,
+  "ridge_alpha": 1.0,
+  "fit_intercept": true,
+  "normalization": "StandardScaler on X and Y (train-only), composed out for SVD",
+  "map_analyzed": "effective A = diag(\u03c3y) W diag(1/\u03c3x) in original coords; SVD/truncation on A (not scaled Ridge.coef_)",
+  "scaled_coef_diagnostic": "s_scaled = SVD(W) saved for comparison",
+  "eps_primary": 1e-08,
+  "eps_robustness": [
+    1e-06,
+    1e-08,
+    1e-10
+  ],
+  "primary_spectral_flatness": "H_norm",
+  "direction": "Legacy\u2192HSC (col2\u2192col1)",
+  "gallery": "test-only",
+  "timestamp": "2026-08-22T14:55:28"
+}

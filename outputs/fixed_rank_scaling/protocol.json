@@ -1,0 +1,18 @@
+{
+  "pca_convention": "independent per survey (Legacy PCA_L, HSC PCA_H)",
+  "pca_fit_subset": "inner_tr = 80% of train_idx",
+  "centering": "sklearn PCA default",
+  "whitening": false,
+  "ridge": "StandardScaler + Ridge(alpha=1.0, fit_intercept=True) on full train_idx",
+  "raw_pca_mknn": "cosine mKNN@10 on Z_L vs Z_H, test-only gallery, no Ridge",
+  "direction": "Legacy\u2192HSC",
+  "seed": 0,
+  "test_size": 0.2,
+  "k": 10,
+  "ranks": [
+    256,
+    128
+  ],
+  "pairs_yaml": "/home/angus/platonic-universe/tmp_ridge_geom/official_legacy_pairs.yaml",
+  "timestamp": "2026-08-22T21:34:15"
+}

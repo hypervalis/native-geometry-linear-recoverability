@@ -1,0 +1,16 @@
+scope,x,y,spearman,p
+all_rungs,lift_ridge,A_log,0.45,0.0802957365433964
+astropt,lift_ridge,A_log,0.5,0.6666666666666667
+convnext,lift_ridge,A_log,0.39999999999999997,0.6
+dinov2,lift_ridge,A_log,0.19999999999999998,0.8
+vit,lift_ridge,A_log,-1.0,0.0
+all_rungs,lift_ridge,D_sim,0.27941176470588236,0.29461765356841446
+astropt,lift_ridge,D_sim,0.5,0.6666666666666667
+convnext,lift_ridge,D_sim,1.0,0.0
+dinov2,lift_ridge,D_sim,1.0,0.0
+vit,lift_ridge,D_sim,-1.0,0.0
+all_rungs,lift_ridge,kappa_95_5,0.35000000000000003,0.18386882202619317
+astropt,lift_ridge,kappa_95_5,0.5,0.6666666666666667
+convnext,lift_ridge,kappa_95_5,0.39999999999999997,0.6
+dinov2,lift_ridge,kappa_95_5,0.19999999999999998,0.8
+vit,lift_ridge,kappa_95_5,-1.0,0.0

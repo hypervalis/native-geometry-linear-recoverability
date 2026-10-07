@@ -1,0 +1,17 @@
+{
+  "T_real_mean_family_delta_beta": 0.007213163319372716,
+  "median_family_delta_beta": 0.005133560570697503,
+  "n_positive_family_delta_beta": 5,
+  "n_families": 5,
+  "sign_test_one_sided_p": 0.03125,
+  "mean_adjacent_D_align": 0.0026160290731544944,
+  "n_positive_adjacent_D": 9,
+  "n_adjacent": 11,
+  "delta_beta_by_family": {
+    "astropt": 0.005133560570697503,
+    "convnext": 0.0029188195956131482,
+    "dinov2": 0.003125598412889862,
+    "vit": 0.010288432462621601,
+    "ijepa": 0.014599405555041467
+  }
+}

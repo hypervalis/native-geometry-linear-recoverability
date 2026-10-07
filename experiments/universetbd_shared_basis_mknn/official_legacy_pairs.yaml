@@ -1,0 +1,245 @@
+# Official UniverseTBD Legacy↔HSC size ladder (pre-existing activations + SAEs).
+# Source: UniverseTBD/legacysurvey_hsc_embeddings (exported locally).
+# Paths relative to PLATONIC_ROOT. Same row index = same object.
+#
+# family / size_rank used by run_model_size_scaling_mknn.py
+# approx_params_m: rough parameter counts (millions) for plotting
+
+# ---------------------------------------------------------------------------
+# AstroPTv2
+# ---------------------------------------------------------------------------
+official_legacy_cross_astropt_15m:
+  kind: cross_survey
+  survey: legacy_official
+  family: astropt
+  size_rank: 0
+  size_name: 15m
+  paper_model: AstroPTv2 Small
+  approx_params_m: 15
+  parquet1: data_hf/legacysurvey_official/legacysurvey_official_astropt_15m.parquet
+  col1: astropt_15m_hsc
+  parquet2: data_hf/legacysurvey_official/legacysurvey_official_astropt_15m.parquet
+  col2: astropt_15m_legacysurvey
+  default_max_n: 16384
+
+official_legacy_cross_astropt_95m:
+  kind: cross_survey
+  survey: legacy_official
+  family: astropt
+  size_rank: 1
+  size_name: 95m
+  paper_model: AstroPTv2 Base
+  approx_params_m: 95
+  parquet1: data_hf/legacysurvey_official/legacysurvey_official_astropt_95m.parquet
+  col1: astropt_95m_hsc
+  parquet2: data_hf/legacysurvey_official/legacysurvey_official_astropt_95m.parquet
+  col2: astropt_95m_legacysurvey
+  default_max_n: 16384
+
+official_legacy_cross_astropt_850m:
+  kind: cross_survey
+  survey: legacy_official
+  family: astropt
+  size_rank: 2
+  size_name: 850m
+  paper_model: AstroPTv2 Large
+  approx_params_m: 850
+  parquet1: data_hf/legacysurvey_official/legacysurvey_official_astropt_850m.parquet
+  col1: astropt_850m_hsc
+  parquet2: data_hf/legacysurvey_official/legacysurvey_official_astropt_850m.parquet
+  col2: astropt_850m_legacysurvey
+  default_max_n: 16384
+
+# ---------------------------------------------------------------------------
+# ConvNeXtv2
+# ---------------------------------------------------------------------------
+official_legacy_cross_convnext_nano:
+  kind: cross_survey
+  survey: legacy_official
+  family: convnext
+  size_rank: 0
+  size_name: nano
+  paper_model: ConvNeXtv2 Nano
+  approx_params_m: 15
+  parquet1: data_hf/legacysurvey_official/legacysurvey_official_convnext_nano.parquet
+  col1: convnext_nano_hsc
+  parquet2: data_hf/legacysurvey_official/legacysurvey_official_convnext_nano.parquet
+  col2: convnext_nano_legacysurvey
+  default_max_n: 16384
+
+official_legacy_cross_convnext_tiny:
+  kind: cross_survey
+  survey: legacy_official
+  family: convnext
+  size_rank: 1
+  size_name: tiny
+  paper_model: ConvNeXtv2 Tiny
+  approx_params_m: 28
+  parquet1: data_hf/legacysurvey_official/legacysurvey_official_convnext_tiny.parquet
+  col1: convnext_tiny_hsc
+  parquet2: data_hf/legacysurvey_official/legacysurvey_official_convnext_tiny.parquet
+  col2: convnext_tiny_legacysurvey
+  default_max_n: 16384
+
+official_legacy_cross_convnext_base:
+  kind: cross_survey
+  survey: legacy_official
+  family: convnext
+  size_rank: 2
+  size_name: base
+  paper_model: ConvNeXtv2 Base
+  approx_params_m: 89
+  parquet1: data_hf/legacysurvey_official/legacysurvey_official_convnext_base.parquet
+  col1: convnext_base_hsc
+  parquet2: data_hf/legacysurvey_official/legacysurvey_official_convnext_base.parquet
+  col2: convnext_base_legacysurvey
+  default_max_n: 16384
+
+official_legacy_cross_convnext_large:
+  kind: cross_survey
+  survey: legacy_official
+  family: convnext
+  size_rank: 3
+  size_name: large
+  paper_model: ConvNeXtv2 Large
+  approx_params_m: 198
+  parquet1: data_hf/legacysurvey_official/legacysurvey_official_convnext_large.parquet
+  col1: convnext_large_hsc
+  parquet2: data_hf/legacysurvey_official/legacysurvey_official_convnext_large.parquet
+  col2: convnext_large_legacysurvey
+  default_max_n: 16384
+
+# ---------------------------------------------------------------------------
+# DINOv2
+# ---------------------------------------------------------------------------
+official_legacy_cross_dino_small:
+  kind: cross_survey
+  survey: legacy_official
+  family: dinov2
+  size_rank: 0
+  size_name: small
+  paper_model: DINOv2 Small
+  approx_params_m: 22
+  parquet1: data_hf/legacysurvey_official/legacysurvey_official_dino_small.parquet
+  col1: dino_small_hsc
+  parquet2: data_hf/legacysurvey_official/legacysurvey_official_dino_small.parquet
+  col2: dino_small_legacysurvey
+  default_max_n: 16384
+
+official_legacy_cross_dino_base:
+  kind: cross_survey
+  survey: legacy_official
+  family: dinov2
+  size_rank: 1
+  size_name: base
+  paper_model: DINOv2 Base
+  approx_params_m: 86
+  parquet1: data_hf/legacysurvey_official/legacysurvey_official_dino_base.parquet
+  col1: dino_base_hsc
+  parquet2: data_hf/legacysurvey_official/legacysurvey_official_dino_base.parquet
+  col2: dino_base_legacysurvey
+  default_max_n: 16384
+
+official_legacy_cross_dino_large:
+  kind: cross_survey
+  survey: legacy_official
+  family: dinov2
+  size_rank: 2
+  size_name: large
+  paper_model: DINOv2 Large
+  approx_params_m: 300
+  parquet1: data_hf/legacysurvey_official/legacysurvey_official_dino_large.parquet
+  col1: dino_large_hsc
+  parquet2: data_hf/legacysurvey_official/legacysurvey_official_dino_large.parquet
+  col2: dino_large_legacysurvey
+  default_max_n: 16384
+
+official_legacy_cross_dino_giant:
+  kind: cross_survey
+  survey: legacy_official
+  family: dinov2
+  size_rank: 3
+  size_name: giant
+  paper_model: DINOv2 Giant
+  approx_params_m: 1100
+  parquet1: data_hf/legacysurvey_official/legacysurvey_official_dino_giant.parquet
+  col1: dino_giant_hsc
+  parquet2: data_hf/legacysurvey_official/legacysurvey_official_dino_giant.parquet
+  col2: dino_giant_legacysurvey
+  default_max_n: 16384
+
+# ---------------------------------------------------------------------------
+# ViT
+# ---------------------------------------------------------------------------
+official_legacy_cross_vit_base:
+  kind: cross_survey
+  survey: legacy_official
+  family: vit
+  size_rank: 0
+  size_name: base
+  paper_model: ViT Base
+  approx_params_m: 86
+  parquet1: data_hf/legacysurvey_official/legacysurvey_official_vit_base.parquet
+  col1: vit_base_hsc
+  parquet2: data_hf/legacysurvey_official/legacysurvey_official_vit_base.parquet
+  col2: vit_base_legacysurvey
+  default_max_n: 16384
+
+official_legacy_cross_vit_large:
+  kind: cross_survey
+  survey: legacy_official
+  family: vit
+  size_rank: 1
+  size_name: large
+  paper_model: ViT Large
+  approx_params_m: 307
+  parquet1: data_hf/legacysurvey_official/legacysurvey_official_vit_large.parquet
+  col1: vit_large_hsc
+  parquet2: data_hf/legacysurvey_official/legacysurvey_official_vit_large.parquet
+  col2: vit_large_legacysurvey
+  default_max_n: 16384
+
+official_legacy_cross_vit_huge:
+  kind: cross_survey
+  survey: legacy_official
+  family: vit
+  size_rank: 2
+  size_name: huge
+  paper_model: ViT Huge
+  approx_params_m: 632
+  parquet1: data_hf/legacysurvey_official/legacysurvey_official_vit_huge.parquet
+  col1: vit_huge_hsc
+  parquet2: data_hf/legacysurvey_official/legacysurvey_official_vit_huge.parquet
+  col2: vit_huge_legacysurvey
+  default_max_n: 16384
+
+# ---------------------------------------------------------------------------
+# IJEPA
+# ---------------------------------------------------------------------------
+official_legacy_cross_ijepa_huge:
+  kind: cross_survey
+  survey: legacy_official
+  family: ijepa
+  size_rank: 0
+  size_name: huge
+  paper_model: IJEPA Huge
+  approx_params_m: 630
+  parquet1: data_hf/legacysurvey_official/legacysurvey_official_ijepa_huge.parquet
+  col1: ijepa_huge_hsc
+  parquet2: data_hf/legacysurvey_official/legacysurvey_official_ijepa_huge.parquet
+  col2: ijepa_huge_legacysurvey
+  default_max_n: 16384
+
+official_legacy_cross_ijepa_giant:
+  kind: cross_survey
+  survey: legacy_official
+  family: ijepa
+  size_rank: 1
+  size_name: giant
+  paper_model: IJEPA Giant
+  approx_params_m: 1000
+  parquet1: data_hf/legacysurvey_official/legacysurvey_official_ijepa_giant.parquet
+  col1: ijepa_giant_hsc
+  parquet2: data_hf/legacysurvey_official/legacysurvey_official_ijepa_giant.parquet
+  col2: ijepa_giant_legacysurvey
+  default_max_n: 16384

@@ -1,0 +1,14 @@
+{
+  "source": "outputs/ridge_scaling_geometry/effective_map_spectrum",
+  "eps_active": 1e-08,
+  "log_floor": 1e-300,
+  "max_A_log_parity_abs_diff": 1.2878587085651816e-14,
+  "n_models": 16,
+  "f90_median": 0.42728776465798046,
+  "f90_range": [
+    0.4109375,
+    0.49023090586145646
+  ],
+  "n_families_beta_f90_neg": 4,
+  "n_families_beta_feff_neg": 4
+}

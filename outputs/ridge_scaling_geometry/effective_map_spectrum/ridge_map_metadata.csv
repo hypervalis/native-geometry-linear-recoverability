@@ -1,0 +1,17 @@
+family,model,parameter_count,log10_params,input_dim,output_dim,ridge_alpha,fit_intercept,normalization,intercept_l2_scaled,H_norm_scaled_W,A_log_scaled_W
+astropt,official_legacy_cross_astropt_15m,15000000,7.176091259055681,384,384,1.0,True,StandardScaler train-only; SVD on effective A=diag(σy)W diag(1/σx),3.0789730326896967e-06,0.5949202536034404,1.7851678560936988
+astropt,official_legacy_cross_astropt_95m,95000000,7.977723605288848,768,768,1.0,True,StandardScaler train-only; SVD on effective A=diag(σy)W diag(1/σx),4.608049738127295e-06,0.6158172266326224,1.8630065529653046
+astropt,official_legacy_cross_astropt_850m,850000000,8.929418925714293,2048,2048,1.0,True,StandardScaler train-only; SVD on effective A=diag(σy)W diag(1/σx),1.918594474974773e-05,0.619627658435915,1.9886840872376765
+convnext,official_legacy_cross_convnext_nano,15000000,7.176091259055681,640,640,1.0,True,StandardScaler train-only; SVD on effective A=diag(σy)W diag(1/σx),3.997253723506346e-06,0.5742778811584446,1.8596213842317921
+convnext,official_legacy_cross_convnext_tiny,28000000,7.447158031342219,768,768,1.0,True,StandardScaler train-only; SVD on effective A=diag(σy)W diag(1/σx),4.0833531924664206e-06,0.5678745368870822,1.9012688867768912
+convnext,official_legacy_cross_convnext_base,89000000,7.949390006644912,1024,1024,1.0,True,StandardScaler train-only; SVD on effective A=diag(σy)W diag(1/σx),6.682679713571158e-06,0.5550069065874363,1.9074240793729171
+convnext,official_legacy_cross_convnext_large,198000000,8.296665190261532,1536,1536,1.0,True,StandardScaler train-only; SVD on effective A=diag(σy)W diag(1/σx),1.2785684137873103e-05,0.5564850181021174,1.888314210942963
+dinov2,official_legacy_cross_dino_small,22000000,7.342422680822207,384,384,1.0,True,StandardScaler train-only; SVD on effective A=diag(σy)W diag(1/σx),2.155414117759816e-06,0.5997013800529782,1.8419089871787167
+dinov2,official_legacy_cross_dino_base,86000000,7.9344984512435675,768,768,1.0,True,StandardScaler train-only; SVD on effective A=diag(σy)W diag(1/σx),4.120693940532242e-06,0.5861632836174427,1.8339916798749198
+dinov2,official_legacy_cross_dino_large,300000000,8.477121254719663,1024,1024,1.0,True,StandardScaler train-only; SVD on effective A=diag(σy)W diag(1/σx),5.178882251040161e-06,0.5884043654075841,1.8008404249841197
+dinov2,official_legacy_cross_dino_giant,1100000000,9.041392685158225,1536,1536,1.0,True,StandardScaler train-only; SVD on effective A=diag(σy)W diag(1/σx),1.2830404036669943e-05,0.5529715539146609,1.9433418728092284
+vit,official_legacy_cross_vit_base,86000000,7.9344984512435675,768,768,1.0,True,StandardScaler train-only; SVD on effective A=diag(σy)W diag(1/σx),4.323989123251699e-06,0.5670946461385631,1.858029794192519
+vit,official_legacy_cross_vit_large,307000000,8.487138375477187,1024,1024,1.0,True,StandardScaler train-only; SVD on effective A=diag(σy)W diag(1/σx),3.8674179635424895e-06,0.6699867760883971,1.7070436787161178
+vit,official_legacy_cross_vit_huge,632000000,8.800717078282386,1280,1280,1.0,True,StandardScaler train-only; SVD on effective A=diag(σy)W diag(1/σx),6.179642673219621e-06,0.631074792965813,1.7170432209586053
+ijepa,official_legacy_cross_ijepa_huge,630000000,8.799340549453582,1280,1280,1.0,True,StandardScaler train-only; SVD on effective A=diag(σy)W diag(1/σx),1.8408934918234058e-05,0.4496056653217385,2.0595572498459083
+ijepa,official_legacy_cross_ijepa_giant,1000000000,9.0,1408,1408,1.0,True,StandardScaler train-only; SVD on effective A=diag(σy)W diag(1/σx),1.0232645338942208e-05,0.49802880140930383,2.023763088422389

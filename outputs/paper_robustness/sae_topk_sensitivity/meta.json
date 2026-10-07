@@ -1,0 +1,64 @@
+{
+  "topk_grid": [
+    10,
+    20,
+    40
+  ],
+  "topk_meaning": "inference_time_override",
+  "device": "cuda",
+  "elapsed_s": 289.7089946269989,
+  "n_rungs": 16,
+  "summary": [
+    {
+      "topk": 10,
+      "n_rungs": 16,
+      "mean_M_SAE_Ridge": 0.025610314311870615,
+      "mean_M_Dense_Ridge": 0.041533796155019787,
+      "mean_S_SAE": -0.015923481843149175,
+      "S_SAE_family_boot_lo": -0.01919079502414327,
+      "S_SAE_family_boot_hi": -0.012220526904689196,
+      "n_pos_S_SAE_rungs": 0,
+      "T_SAE": -0.013315684693917283,
+      "n_pos_delta_beta_families": 0,
+      "delta_beta_astropt": -0.0028963567326493085,
+      "delta_beta_convnext": -0.0021951875179719933,
+      "delta_beta_dinov2": -0.0002800905400934862,
+      "delta_beta_vit": -0.011477563507011342,
+      "delta_beta_ijepa": -0.04972922517186028
+    },
+    {
+      "topk": 20,
+      "n_rungs": 16,
+      "mean_M_SAE_Ridge": 0.033002746414403414,
+      "mean_M_Dense_Ridge": 0.041533796155019787,
+      "mean_S_SAE": -0.008531049740616371,
+      "S_SAE_family_boot_lo": -0.01193702992335166,
+      "S_SAE_family_boot_hi": -0.004143598238807222,
+      "n_pos_S_SAE_rungs": 1,
+      "T_SAE": -0.009936262131156707,
+      "n_pos_delta_beta_families": 1,
+      "delta_beta_astropt": -0.003207703482655551,
+      "delta_beta_convnext": -0.003486094749514045,
+      "delta_beta_dinov2": 0.0004938652559769302,
+      "delta_beta_vit": -0.00911194376876384,
+      "delta_beta_ijepa": -0.03436943391082702
+    },
+    {
+      "topk": 40,
+      "n_rungs": 16,
+      "mean_M_SAE_Ridge": 0.03381141287763198,
+      "mean_M_Dense_Ridge": 0.041533796155019787,
+      "mean_S_SAE": -0.007722383277387807,
+      "S_SAE_family_boot_lo": -0.010802563320109813,
+      "S_SAE_family_boot_hi": -0.004231512562302867,
+      "n_pos_S_SAE_rungs": 1,
+      "T_SAE": -0.007864281270133958,
+      "n_pos_delta_beta_families": 0,
+      "delta_beta_astropt": -0.006497579617560576,
+      "delta_beta_convnext": -0.005241042439124045,
+      "delta_beta_dinov2": -0.002763388296261283,
+      "delta_beta_vit": -0.006265984771525124,
+      "delta_beta_ijepa": -0.01855341122619876
+    }
+  ]
+}

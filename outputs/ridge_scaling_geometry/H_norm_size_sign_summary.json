@@ -1,0 +1,13 @@
+{
+  "metric": "H_norm_vs_log10P",
+  "n_families": 5,
+  "n_positive_slope": 3,
+  "n_negative_slope": 2,
+  "slopes": {
+    "astropt": 0.013780051265114402,
+    "convnext": -0.01727559908254661,
+    "dinov2": -0.02447789011435166,
+    "vit": 0.08671961007261791,
+    "ijepa": 0.2413199874499001
+  }
+}
