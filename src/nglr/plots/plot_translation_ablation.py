@@ -15,7 +15,7 @@ import pandas as pd
 ROOT = Path(__file__).resolve().parents[3]
 RUNG = ROOT / "outputs/translation_ablation/translation_ablation_rung_scores.csv"
 FAM = ROOT / "outputs/translation_ablation/family_delta_beta_translation.csv"
-OUT = Path(__file__).resolve().parent / "figures" / "translation_ablation_summary.png"
+OUT = ROOT / "figures" / "figure_3_translation_ablation_summary.png"
 
 FAMILY_LABEL = {
     "astropt": "AstroPT",

@@ -11,7 +11,7 @@ import pandas as pd
 
 ROOT = Path(__file__).resolve().parents[3]
 OUT = ROOT / "outputs/paper_robustness/sae_topk_sensitivity"
-FIG_DIR = Path(__file__).resolve().parent / "figures"
+FIG = ROOT / "figures" / "figure_4_sae_topk_sensitivity.png"
 SUMMARY = OUT / "summary_by_topk.csv"
 
 FAM_COLS = [
@@ -102,16 +102,10 @@ def main() -> None:
     ax.set_title("(b)")
     ax.legend(frameon=False, loc="lower right", ncol=2, columnspacing=0.8)
 
-    FIG_DIR.mkdir(parents=True, exist_ok=True)
-    out_paper = FIG_DIR / "sae_topk_sensitivity.png"
-    out_root = ROOT / "figures" / "sae_topk_sensitivity.png"
-    out_root.parent.mkdir(parents=True, exist_ok=True)
-    fig.savefig(out_paper, dpi=200)
-    fig.savefig(out_root, dpi=200)
-    fig.savefig(OUT / "sae_topk_sensitivity.png", dpi=200)
+    FIG.parent.mkdir(parents=True, exist_ok=True)
+    fig.savefig(FIG, dpi=200)
     plt.close(fig)
-    print(f"wrote {out_paper}")
-    print(f"wrote {out_root}")
+    print(f"wrote {FIG}")
 
 
 if __name__ == "__main__":

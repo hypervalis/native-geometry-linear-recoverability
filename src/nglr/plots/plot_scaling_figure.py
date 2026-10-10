@@ -14,7 +14,7 @@ import matplotlib.pyplot as plt
 import pandas as pd
 
 ROOT = Path(__file__).resolve().parents[3]
-FIG = Path(__file__).resolve().parent / "figures"
+OUT = ROOT / "figures" / "figure_1_scaling_dense_and_fixedrank.png"
 RUNG = ROOT / "outputs/ridge_scaling_geometry/rung_scores.csv"
 FIXED = ROOT / "outputs/fixed_rank_scaling/fixed_rank_scores.csv"
 
@@ -126,11 +126,9 @@ def main() -> None:
         left=0.14, right=0.99, top=0.84, bottom=0.12, wspace=0.18, hspace=0.30
     )
 
-    FIG.mkdir(parents=True, exist_ok=True)
-    for name in ("scaling_dense_and_fixedrank.png", "scaling_dense_and_indpca256.png"):
-        out = FIG / name
-        fig.savefig(out, dpi=300)
-        print(f"wrote {out}")
+    OUT.parent.mkdir(parents=True, exist_ok=True)
+    fig.savefig(OUT, dpi=300)
+    print(f"wrote {OUT}")
 
 
 if __name__ == "__main__":

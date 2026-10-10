@@ -15,8 +15,7 @@ import pandas as pd
 ROOT = Path(__file__).resolve().parents[3]
 ANIS = ROOT / "outputs/ridge_scaling_geometry/anisotropy_concentration"
 PER = ANIS / "per_model_summary.csv"
-OUT = Path(__file__).resolve().parent / "figures" / "geometry_anisotropy_vs_functional.png"
-OUT_ROOT = ROOT / "figures" / "geometry_anisotropy_vs_functional.png"
+OUT = ROOT / "figures" / "figure_2_geometry_anisotropy_vs_functional.png"
 
 FAM_ORDER = ["astropt", "convnext", "dinov2", "vit", "ijepa"]
 FAM_LABEL = {
@@ -121,12 +120,9 @@ def main() -> None:
     ax.legend(handles=[h_lift, h_anis], frameon=False, loc="lower right", fontsize=7)
 
     OUT.parent.mkdir(parents=True, exist_ok=True)
-    OUT_ROOT.parent.mkdir(parents=True, exist_ok=True)
     fig.savefig(OUT, dpi=220)
-    fig.savefig(OUT_ROOT, dpi=220)
     plt.close(fig)
     print(f"wrote {OUT}")
-    print(f"wrote {OUT_ROOT}")
     print(
         f"medians: lift={per['fraction_directions_for_90pct_lift'].median()*100:.1f}% "
         f"anis={per['f90_anis'].median()*100:.1f}%"

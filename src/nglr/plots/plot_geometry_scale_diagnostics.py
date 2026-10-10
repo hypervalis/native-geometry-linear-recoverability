@@ -14,8 +14,7 @@ import pandas as pd
 ROOT = Path(__file__).resolve().parents[3]
 PER = ROOT / "outputs/ridge_scaling_geometry/anisotropy_concentration/per_model_summary.csv"
 LOCAL = ROOT / "outputs/data_supported_distortion/local_edge_summary.csv"
-OUT = Path(__file__).resolve().parent / "figures" / "geometry_scale_diagnostics.png"
-OUT_ROOT = ROOT / "figures" / "geometry_scale_diagnostics.png"
+OUT = ROOT / "figures" / "appendix_geometry_scale_diagnostics.png"
 
 FAM_ORDER = ["astropt", "convnext", "dinov2", "vit", "ijepa"]
 FAM_LABEL = {
@@ -87,9 +86,7 @@ def main() -> None:
         bbox_to_anchor=(0.5, 1.12),
     )
     OUT.parent.mkdir(parents=True, exist_ok=True)
-    OUT_ROOT.parent.mkdir(parents=True, exist_ok=True)
     fig.savefig(OUT, dpi=200, bbox_inches="tight")
-    fig.savefig(OUT_ROOT, dpi=200, bbox_inches="tight")
     plt.close(fig)
     print(f"wrote {OUT}")
 

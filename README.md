@@ -52,9 +52,20 @@ python src/nglr/plots/plot_geometry_scale_diagnostics.py
 python src/nglr/plots/plot_sae_topk_sensitivity.py
 ```
 
-`plot_scaling_figure.py` is Figure 1, `plot_geometry_anisotropy_functional.py` is Figure 2, `plot_translation_ablation.py` is Figure 3, and `plot_sae_topk_sensitivity.py` is Figure 4. `plot_geometry_figure.py` and `plot_geometry_scale_diagnostics.py` are the \(D_{\mathrm{sim}}\) and \(\sigma_{\mathrm{local}}\) diagnostics from the geometry appendix.
+Each script writes one PNG to `figures/` at the repository root:
 
-Figures are written to `src/nglr/plots/figures/`. The affine-reconstruction identity used by the translation ablation is checked by
+| Script | Output |
+| --- | --- |
+| `plot_scaling_figure.py` | `figure_1_scaling_dense_and_fixedrank.png` |
+| `plot_geometry_anisotropy_functional.py` | `figure_2_geometry_anisotropy_vs_functional.png` |
+| `plot_translation_ablation.py` | `figure_3_translation_ablation_summary.png` |
+| `plot_sae_topk_sensitivity.py` | `figure_4_sae_topk_sensitivity.png` |
+| `plot_geometry_figure.py` | `appendix_geometry_distortion_summary.png` (\(D_{\mathrm{sim}}\), \(\sigma_{\mathrm{local}}\)) |
+| `plot_geometry_scale_diagnostics.py` | `appendix_geometry_scale_diagnostics.png` |
+
+These scripts read only the precomputed tables in `outputs/`. The `run_*.py` analysis scripts below also drop diagnostic plots into `figures/`, without a figure-number prefix.
+
+The affine-reconstruction identity used by the translation ablation is checked by
 
 ```bash
 python -m pytest
@@ -63,6 +74,8 @@ python -m pytest
 ## Recompute from embeddings
 
 Set `PLATONIC_ROOT` to a checkout that contains the official UniverseTBD Legacy↔HSC embedding parquets at the paths in `configs/official_legacy_pairs.yaml` (row index is the object identity; `default_max_n` is 16384). SAE and BSF runs also need the corresponding checkpoints under `$PLATONIC_ROOT/outputs/sae` and `$PLATONIC_ROOT/outputs/bsf`. Those weights are not in this repository. GPU is expected; the scripts fall back to CPU when CUDA is absent.
+
+**Heads-up:** these scripts are slow. With its default 200-draw shuffle null, `run_ridge_scaling_geometry.py` alone can take an hour or more, and the DualEncoder control trains networks. For a quick check, pass it `--skip-perm --skip-boot`.
 
 Run from this directory. Primary statistic:
 

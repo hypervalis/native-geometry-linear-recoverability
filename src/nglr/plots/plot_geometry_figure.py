@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Figure 2: D_sim and sigma_local vs model size (cached outputs only)."""
+"""Appendix: D_sim and sigma_local vs model size (cached outputs only)."""
 
 from pathlib import Path
 
@@ -9,7 +9,7 @@ import pandas as pd
 ROOT = Path(__file__).resolve().parents[3]
 SPEC = ROOT / "outputs/ridge_scaling_geometry/singular_spectrum_summary.csv"
 LOCAL = ROOT / "outputs/data_supported_distortion/local_edge_summary.csv"
-OUT = Path(__file__).resolve().parent / "figures/geometry_distortion_summary.png"
+OUT = ROOT / "figures" / "appendix_geometry_distortion_summary.png"
 
 FAMILY_STYLE = {
     "astropt": ("AstroPT", "#1f77b4"),
